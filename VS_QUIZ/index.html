@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Navigation Example</title>
+</head>
+<body>
+    <div class="main-nav">
+        <nav>
+            <ul>
+                <li><a href="#body">Home</a></li>
+                <li><a href="#menu">Food Gallery</a></li>
+                <li><a href="#foot">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Showcase -->
+    <header class="showcase" id="body">
+        <div class="text">
+            <p>Unlock rewards with the</p>
+            <h1>Slim Chickens App</h1>
+            <div>
+                <a href="">Download Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="feature-text">
+            <h2>Features</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quibusdam?</p>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Menu -->
+    <section class="menu" id="menu">
+        <h1>MENU GALLERY</h1>
+        <div class="menu-hold">
+            <div class="menu-card" onclick="showDetail('assets/y1.png', 'TITLE NAME', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quibusdam?', 'PHP 129')">
+                <img src="assets/y1.png" alt="">
+            </div>
+            <div class="menu-card" onclick="showDetail('assets/y2.png', 'TITLE NAME 2', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quibusdam?', 'PHP 129')">
+                <img src="assets/y2.png" alt="">
+            </div>
+            <div class="menu-card" onclick="showDetail('assets/y3.png', 'TITLE NAME 3', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quibusdam?', 'PHP 129')">
+                <img src="assets/y3.png" alt="">
+            </div>
+            <div class="menu-card" onclick="showDetail('assets/y5.png', 'TITLE NAME 5', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quibusdam?', 'PHP 129')">
+                <img src="assets/y5.png" alt="">
+            </div>
+            <div class="menu-card" onclick="showDetail('assets/y6.png', 'TITLE NAME 6', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quibusdam?', 'PHP 129')">
+                <img src="assets/y6.png" alt="">
+            </div>
+            <div class="menu-card" onclick="showDetail('assets/y7.png', 'TITLE NAME 7', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quibusdam?', 'PHP 129')">
+                <img src="assets/y7.png" alt="">
+            </div>
+            <div class="menu-card" onclick="showDetail('assets/y8.png', 'TITLE NAME 8', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quibusdam?', 'PHP 129')">
+                <img src="assets/y8.png" alt="">
+            </div>
+            <div class="menu-card" onclick="showDetail('assets/y9.png', 'TITLE NAME 9', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quibusdam?', 'PHP 129')">
+                <img src="assets/y9.png" alt="">
+            </div>
+            <div class="menu-card" onclick="showDetail('assets/y12.png', 'TITLE NAME 12', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quibusdam?', 'PHP 129')">
+                <img src="assets/y12.png" alt="">
+            </div>
+            <div class="menu-card" onclick="showDetail('assets/y13.png', 'TITLE NAME 13', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quibusdam?', 'PHP 129')">
+                <img src="assets/y13.png" alt="">
+            </div>
+            <div class="menu-card" onclick="showDetail('assets/y14.png', 'TITLE NAME 14', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quibusdam?', 'PHP 129')">
+                <img src="assets/y14.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Pop-Up -->
+    <section class="details" id="detailsSection">
+        <div class="details-card" id="myPopup">
+            <button class="close-btn" onclick="closePopup()">×</button>
+            <div class="pop-up">
+                <img id="popupImage" src="" alt="">
+                <div class="pop-up-text">
+                    <h2 id="popupTitle">TITLE NAME</h2>
+                    <p id="popupDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quibusdam?
+                    </p>
+                    <p id="popupPrice">PHP 129</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content" id="footer">
+          <h2>Guiaya's Bike Shop</h2>
+          <h4 class="tagline">
+            Pedal through the digital marketplace and ignite your passion for
+            <br />
+            cycling with every purchase.
+          </h4>
+          <div class="contact-icon">
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png"
+              alt="facebook-new"
+              style="filter: invert(100%)"
+            />
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-filled/50/000000/instagram.png"
+              alt="instagram"
+              style="filter: invert(100%)"
+            />
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-filled/50/000000/gmail.png"
+              alt="gmail"
+              style="filter: invert(100%)"
+            />
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-filled/50/000000/github.png"
+              alt="github"
+              style="filter: invert(100%)"
+            />
+          </div>
+          <p>&copy; 2024 Guiaya's Bike Shop. All rights reserved.</p>
+        </div>
+      </footer>
+
+    <script src="java.js"></script>
+</body>
+</html>
